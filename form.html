@@ -3,12 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form</title>
 </head>
 <body>
-    
+    <div class="leftSide">
+        <img src="pics/background.jpg" class="stretch" alt="picture of a coffee shop and journals" />
+    </div>
 
-    <link rel="stylesheet" href="normalize.css">
+    <div class="rightSide">
+        <div class="quote">
+            <p>"Unlock a world of introspection and growth. Create your account, where your thoughts find a timeless home and your journey gains a digital heartbeat."</p>
+        </div>
+        <div>
+            <form class="form">
+                <div class="leftForm">
+                    <label>Username: <input type="text" name="username" id="name" placeholder="Jane Doe" /></label>
+                    <label>Email: <input type="email" name="email" placeholder="example@gmail.com"/></label>
+                    <label>Password: <input type="password" name="password" id="password" /></label>
+                </div>
+                
+                <div class="rightForm">
+                    <label>Phone Number: <input type="tel" id="phoneNum" name="phoneNum" placeholder="555-555-5555" /></label>
+                    <label>Date of Birth: <input type="date" id="birthday" name="birthday" />
+                    <label>Confirm Password: <input type="password" id="confirmPwd" name="confirmPwd" /></label>    
+                </div>
+            </form>
+        <div>
+
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="normalize.css"> 
     <link rel="stylesheet" href="styles.css">
 </body>
 </html>
