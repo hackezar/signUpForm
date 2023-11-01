@@ -7,21 +7,48 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2vmax;
+    font-size: 1.5vmax;
     overflow: hidden;
     height: 30vh;
-    font-family: roboto;
+
 }
 
-#background {
-    width: 40vw;
-    object-fit: fill;
-    height: 100vh;
+.quote > p:hover {
+    border: 2px groove pink;
+    transform: rotate(180deg);
+}
+
+
+.left {
+
+    background-image: url("pics/background.jpg");
+    background-size:100% 100%;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left > img {
+    width: 20vmin;
+}
+
+.left > p {
+    font-size: 5vmin;
+    color: #FFFFFF;
+    text-shadow:  3px 3px black;
+
+}
+
+.right {
+  width: 70vw;  
 }
 
 body {
   display: flex;
   margin-top: 0;
+  font-family: roboto, sans-serif;
 }
 
 
@@ -48,8 +75,9 @@ body {
     height: 50vh;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    background-color: #2172ff;
+    background-color: #01051a;
     box-shadow: 2px 2px black;
+    color:#ffffff;
 }
 
 #formList {
@@ -67,6 +95,7 @@ body {
    
 }
 
+
 .litems > input, .litems > label {
     display: flex;
     flex: 1;
@@ -79,6 +108,10 @@ body {
     flex-direction: column;
     width: 25vw;
 
+}
+
+.litems > label > input, .litems > textarea {
+    background-color: #FFFFFFF;
 }
 
 #textarea > textarea {
@@ -102,7 +135,18 @@ border-radius: 6px;
 box-shadow: 2px 2px;
 }
 
-input:focus, textarea:focus {
-outline: 1px solid blue;
-box-shadow: 2px 2px blue;
+#submit:hover {
+    background-color: #01051a;
+    color: #FFFFFF;
+    
 }
+
+input:focus, textarea:focus {
+outline: 2px solid #2b4bff;
+box-shadow: 2px 2px black;
+}
+
+form > legend {
+    font-size: 1rem;
+}
+

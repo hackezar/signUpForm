@@ -6,8 +6,9 @@
     <title>Form</title>
 </head>
 <body>
-    <div class="left">
-        <img id="background" src="pics/background.jpg">
+    <div class="left">       
+            <p id="logo-text">Jack Halcisak</p>
+            <img id="logo" src="pics/powerLogo.png">
     </div>
 
     <div class="right">
@@ -19,13 +20,13 @@
         <legend>Lets Get in Touch!</legend>
         <ul id="formList">
             <li class="litems">
-                <label>Name: <input type="text" name="name" id="name" placeholder="John Doe"/></label>
+                <label>Name: <input type="text" name="name" id="name" placeholder="John Doe" required/></label>
             </li>
             <li class="litems">
-                <label>Email: <input type="email" name="email" id="email" placeholder="example@gmail.com" /></label>
+                <label>Email: <input type="email" name="email" id="email" placeholder="example@gmail.com" required/></label>
             </li>
             <li class="litems">
-                <label>Phone: <input type="tel" name="phone" id="phone" placeholder="555-555-5555"/></label>
+                <label>Phone: <input type="tel" name="phone" id="phone" placeholder="555-555-5555" required/></label>
             </li>
             <li class="litems" id="textarea">
                 <label for="remarks">Contact:</label>
@@ -44,5 +45,7 @@
 
     <link rel="stylesheet" href="normalize.css"> 
     <link rel="stylesheet" href="styles.css">
+
+    <script src="script.js"></script>
 </body>
 </html>
