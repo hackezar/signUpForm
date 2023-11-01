@@ -6,32 +6,41 @@
     <title>Form</title>
 </head>
 <body>
-    <div class="leftSide">
-        <img src="pics/background.jpg" class="stretch" alt="picture of a coffee shop and journals" />
+    <div class="left">
+        <img id="background" src="pics/background.jpg">
     </div>
 
-    <div class="rightSide">
+    <div class="right">
         <div class="quote">
-            <p>"Unlock a world of introspection and growth. Create your account, where your thoughts find a timeless home and your journey gains a digital heartbeat."</p>
+            <p>Together, we'll turn visions into vibrant digital realities. With a passion for innovation, an eye for detail, and a dedication to crafting seamless user experiences, I bring the power to transform ideas into exceptional online presences."</p>
         </div>
-        <div>
-            <form class="form">
-                <div class="leftForm">
-                    <label>Username: <input type="text" name="username" id="name" placeholder="Jane Doe" /></label>
-                    <label>Email: <input type="email" name="email" placeholder="example@gmail.com"/></label>
-                    <label>Password: <input type="password" name="password" id="password" /></label>
-                </div>
-                
-                <div class="rightForm">
-                    <label>Phone Number: <input type="tel" id="phoneNum" name="phoneNum" placeholder="555-555-5555" /></label>
-                    <label>Date of Birth: <input type="date" id="birthday" name="birthday" />
-                    <label>Confirm Password: <input type="password" id="confirmPwd" name="confirmPwd" /></label>    
-                </div>
-            </form>
-        <div>
 
+        <form id="a-form" action="/my-handling-form-page" method="post">
+        <legend>Lets Get in Touch!</legend>
+        <ul id="formList">
+            <li class="litems">
+                <label>Name: <input type="text" name="name" id="name" placeholder="John Doe"/></label>
+            </li>
+            <li class="litems">
+                <label>Email: <input type="email" name="email" id="email" placeholder="example@gmail.com" /></label>
+            </li>
+            <li class="litems">
+                <label>Phone: <input type="tel" name="phone" id="phone" placeholder="555-555-5555"/></label>
+            </li>
+            <li class="litems" id="textarea">
+                <label for="remarks">Contact:</label>
+                <textarea  id="remarks" name="remarks" rows="6" placeholder="Business Inquiries, Bug Reports, Say Hello"></textarea>
+            </li>
+            </ul>
+        </form>
+
+        <div class="bottom-right">
+            <button id="submit" type="submit" form="a-form">submit</button>
         </div>
+        
     </div>
+
+
 
     <link rel="stylesheet" href="normalize.css"> 
     <link rel="stylesheet" href="styles.css">
